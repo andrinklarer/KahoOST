@@ -3,20 +3,12 @@ name: Build PDF
 on: [ push ]
 
 jobs:
-  build:
+  build-typst-doc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Install Typst
-        run: |
-          curl -sSf https://typst.app/install/linux.sh | sh
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-
-      - name: Build PDF
-        run: typst compile main.typ output.pdf
-
-      - name: Upload PDF
-        uses: actions/upload-artifact@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Typst
+        uses: lvignoli/typst-action@main
         with:
-          name: output-pdf
-          path: output.pdf
+          source_file: docs/main.typ
