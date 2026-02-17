@@ -1,5 +1,4 @@
-= Management Summary
-
+// Management summary 
   Even though this is the first chapter of your document, it is typically the last one filled with content. The *Management Summary* is a *brief and high-level summary* of your project. It should give any reader unfamiliar to the project an overview of the contents included later in the document.
     
     
