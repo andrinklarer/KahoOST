@@ -1,4 +1,24 @@
-= Project Plan
+= Projektplan
+== Scope
+
+// TODO
+
+== Ressourcen
+
+// TODO
+
+== Zeitplan
+
+// TODO
+
+== Organisation und Rollen
+
+// TODO
+
+== Risk Management
+
+// TODO
+
     Describe the project plan as covered in the SEP2 module. A project plan typically consists of the following topics:
         - Processes, meetings and roles
         - Phases, iterations and milestones
