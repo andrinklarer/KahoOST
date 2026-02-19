@@ -1,8 +1,8 @@
-==== Projekt Name: <projekt-name>
+== Project Proposal
+==== Projektname:
 KahoOST
 
 #heading(level: 3, numbering: none)[Teammitglieder]
-<teammitglieder>
 #block[
   Gioele Petrillo (#link("mailto:gioele.petrillo@ost.ch")[gioele.petrillo\@ost.ch];)
 
