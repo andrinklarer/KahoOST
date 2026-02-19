@@ -10,23 +10,27 @@
   SE Project \
   Dokumentation \
 
-  Semester: Spring 2026
+  Semester: Frühling 2026
 
   #box(image("resources/se-project-logo.png", height: 5cm))
+  #let date = datetime.today()
+
+
 
   Version: 1.0.0 \
-  // TODO Datum automatisch und Git 
-  Date: \
+  Date: #date.display(
+    "[day]-[month]-[year]"
+  ) \
   Git Version:
 
   #figure(
     align(
       center,
     )[#table(
-        columns: 2, align: (right, left,), stroke: none, [#strong[Project Team:];], [Gioele Petrillo], [], [Ethann Baumgartner], [], [Jasmin Fässler], [], [Andrin Klarer], [], [Andràs Tarlós], [#strong[Project Advisor:];], [Abinas Kuganathan],
+        columns: 2, align: (right, left,), stroke: none, [#strong[Team:];], [Gioele Petrillo (gioele.petrillo\@ost.ch)], [], [Ethann Baumgartner (ethan.baumgartner\@ost.ch)], [], [Jasmin Fässler (jasmin.faessler\@ost.ch)], [], [Andrin Klarer (andrin.klarer\@ost.ch)], [], [András Tarlós (andras.tarlos\@ost.ch)], [#strong[Betreuer:];], [Abinas Kuganathan (abinas.kuganathan\@ost.ch)],
       )], kind: table,
   )
 
-  School of Computer Science \
-  OST Eastern Switzerland University of Applied Sciences
+  Informatik \
+  Ostschweizer Fachhochschule
 ]
