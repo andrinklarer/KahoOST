@@ -1,8 +1,10 @@
+#import "@preview/gantty:0.5.1": gantt
+
 #pagebreak()
 = Projektplan
 
-== Scope
-#line(length: 100%)
+== Scope -- Estimated Features
+
 Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST
 unflexibel und unpers¨onlich. Wir wollen eine ¨ahnliche Webapplikation erstellen, womit
 Dozenten ein Quiz mit Fragen erstellen k¨onnen (diesen Bereich nennen wir AdminKonsole). Dieses Quiz kann dann in der Vorlesung durchgef¨uhrt werden in Echtzeit mit
@@ -23,25 +25,25 @@ Mögliche Erweiterungen
 
 
 == Ressourcen
-#line(length: 100%)
 // TODO
 
+#pagebreak()
+#set page(flipped: true)
 == Zeitplan
-#line(length: 100%)
-// TODO
 
+#gantt(yaml("../resources/gantt.yaml"))
+
+#pagebreak()
+#set page(flipped: false)
 == Organisation und Rollen
-#line(length: 100%)
 
 // TODO
 
 == Risk Management
-#line(length: 100%)
 
 
 == Guidelines
-#line(length: 100%)
-In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen sollen, einheitlich, zielorientiert und sturkturiert an dieser Projektarbeit zu schaffen.
+In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
 
 === Dokumentation
 
@@ -68,19 +70,7 @@ Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich i
 Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 
 == Time Tracking
-#line(length: 100%)
-Für Time-Tracking wird die Webseite Clockify verwendet.
-// TODO
-
-    Describe the project plan as covered in the SEP2 module. A project plan typically consists of the following topics:
-        - Processes, meetings and roles
-        - Phases, iterations and milestones
-        - A *rough* list of things to be done (work items)
-        - Risk management
-        - Planning Tools (issue tracker, time tracker, ...)
-    
-    You should *_not_* describe your *technical solution* in this chapter. It is all about organizing your project.
+Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
 
 == Issue & Project Tracking Software
-#line(length: 100%)
-Um Work-Items erstellen zu können wird *Jira* verwendet. *Jira* erleichtert uns, den Überblick darüber zu behalten, wie viele Features noch implementiert werden müssen und respektive, wie viel Zeit diese in Anspruch nehmen. Klicke den folgenden Link an, um zur Übersicht des Projekts auf Jira zu kommen: #link("https://andrasts.atlassian.net/jira/software/projects/SCRUM/boards/1", "KahoOST Jira").
+Um Work-Items erstellen zu können wird *Jira* verwendet. Jira erleichtert uns, den Überblick darüber zu behalten, wie viele Features noch implementiert werden müssen und respektive, wie viel Zeit diese in Anspruch nehmen. Klicke den folgenden Link an, um zur Übersicht des Projekts auf Jira zu kommen: #link("https://andrasts.atlassian.net/jira/software/projects/SCRUM/boards/1", "KahoOST Jira").

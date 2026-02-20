@@ -3,8 +3,14 @@
 )
 
 #set text(
-  lang: "de"
+  lang: "de", region: "CH"
 )
+
+#show heading.where(level: 2): it => {
+  it
+  line(length: 100%)
+  v(0.4em)
+}
 
 #include "title-page.typ"
 #pagebreak()
