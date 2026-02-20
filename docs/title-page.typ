@@ -8,16 +8,13 @@
 
 #block[
   SE Project -- Dokumentation \
-
   Frühlingssemester FS 2026
 
-  #box(image("resources/se-project-logo.png", height: 5cm))
+  #box(image("resources/se-project-logo.png", height: 5cm)) // <- Hier noch das Logo vom KahoOST, TODO
   #let date = datetime.today()
 
-
-
   Version: 1.0.0 \
-  Date: #date.display(
+  Datum: #date.display(
     "[day]-[month]-[year]"
   ) \
   Git Version:
@@ -32,4 +29,6 @@
 
   Informatik \
   Ostschweizer Fachhochschule
+
+  #box(image("resources/logo-ost.svg", height: 3cm))
 ]
