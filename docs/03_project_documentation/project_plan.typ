@@ -37,7 +37,9 @@ Mögliche Erweiterungen
 
 == Risk Management
 #line(length: 100%)
+#image("../images/risks-v1.png")
 
+Zusammengefasst gibt es 3 Arten von Risiken: Benutzerfreundlichkeit, mögliche Sicherheitslücken und unvorhersehbare Probleme bei genutzten Drittanbieter-Diensten (wie Vercel). Wir vertrauen auf die Drittanbieter, da es bisher keine grossen Probleme gab. Wir halten unsere App auf dem neusten Stand um nicht Opfer von z.B. React Sicherheitslücken zu werden. Da wir iterativ arbeiten können wir die Benutzerfreundlichkeit früh bei einem MVP testen und können uns dementsprechend agil Zeit für Anpassungen der UX einplanen.
 
 == Guidelines
 #line(length: 100%)
