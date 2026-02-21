@@ -1,55 +1,58 @@
+#import "@preview/gantty:0.5.1": gantt
+
 #pagebreak()
 = Projektplan
 
-== Scope
-#line(length: 100%)
-Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST
-unflexibel und unpers¨onlich. Wir wollen eine ¨ahnliche Webapplikation erstellen, womit
-Dozenten ein Quiz mit Fragen erstellen k¨onnen (diesen Bereich nennen wir AdminKonsole). Dieses Quiz kann dann in der Vorlesung durchgef¨uhrt werden in Echtzeit mit
-allen Studenten und am Schluss wird eine Rangliste angezeigt.
-Zus¨atzlich bietet Kahoost diese wichtigen Funktionalit¨aten:
-• das exportieren als Anki-Kartenset und CSV
-• eine detailiertere (z.B. schnellstantwortente Person wird hervorgehoben) und visuell ansprechendere Rangliste
-• Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht,
-bei welchen Fragen Nachholbedarf besteht
-• Responsive Layout (Studenten k¨onnen Quiz am Handy oder Laptop l¨osen)
-Mögliche Erweiterungen
-• PDF Export
-• PvP-Modus unter Studenten von existierenden Vorlesungskarten
-• Karten generieren mit ”KI”
-• Zugriff auf Moodle
-• Markdown
-• Quality of Life
+== Scope -- Estimated Features
 
+Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
+
+Zusätzlich bietet Kahoost diese wichtigen Funktionalitäten:
+- das Exportieren als Anki-Kartenset und CSV
+- eine detailliertere (z.B. schnellstantwortende Person wird hervorgehoben) und visuell ansprechendere Rangliste
+- Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht, bei welchen Fragen Nachholbedarf besteht
+- Responsive Layout (Studenten können Quiz am Handy oder Laptop lösen)
+
+*Mögliche Erweiterungen*
+- PDF Export
+- PvP-Modus unter Studenten von existierenden Vorlesungskarten
+- Karten generieren mit "KI"
+- Zugriff auf Moodle
+- Markdown
+- Quality of Life
 
 == Ressourcen
-#line(length: 100%)
-Es sind keine finanziellen Kosten
-eingeplant, da das Hosting kostenlos zur Verfügung steht, sodass das Projekt ausschliesslich mit der
-vorgesehenen Zeit und dem Einsatz der Teammitglieder umgesetzt werden kann.
+Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung:
 
+*Personen:* 6 Informatikstudenten, die als Full-Stack-Entwickler tätig sein werden, sowie ein Betreuer, der mit seiner beratenden Funktion zur Seite steht.
+
+*Zeit:* Das Projekt wird über einen Zeitraum von 15 Wochen durchgeführt, was insgesamt 720 Stunden Arbeitszeit für das gesamte Team ergibt.
+
+*Kosten:* Es stehen keine finanziellen Mittel zur Verfügung. Wir setzen ausschliesslich auf kostenlose Ressourcen:
+- *Hardware:* Alle Teammitglieder verfügen über einen eigenen Computer, der für die Entwicklung genutzt werden kann.
+- *Software:* Alle benötigten Software-Tools und -Dienste, wie z.B. GitHub für die Versionskontrolle, Jira für das Projektmanagement und Clockify für die Zeiterfassung, sind kostenlos verfügbar. Auch die Bereitstellung der Webapplikation wird über kostenlose Hosting-Dienste erfolgen.
+
+*Qualität:* Angesichts der begrenzten Ressourcen, insbesondere der Zeit und Kosten, priorisieren wir die Stabilität und Usability. Als Qualitätsanspruch setzen wir uns zum Ziel, ein funktionsfähiges MVP zu erstellen, das die Kernfunktionalitäten unseres Produkts abdeckt. Weitere Qualitätsaspekte wie Performance oder Sicherheit werden zwar auch beachtet, aber nicht auf Kosten der Stabilität oder Usability priorisiert.
+
+
+#pagebreak()
+#set page(flipped: true)
 == Zeitplan
-#line(length: 100%)
-Das Projekt wird von einem Team aus sechs Personen über einen Zeitraum von 15 Wochen durchge-
-führt, wobei jede Person 8 Stunden pro Woche arbeitet. Dadurch ergibt sich eine Gesamtarbeitszeit
-von 120 Stunden pro Person und 720 Stunden für das gesamte Team.
+Es gilt die 720h Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind. 
 
-== Meetings
-#line(length: 100%)
-Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
+#gantt(yaml("../resources/gantt.yaml"))
 
+#pagebreak()
+#set page(flipped: false)
 == Organisation und Rollen
-#line(length: 100%)
 
 // TODO
 
 == Risk Management
-#line(length: 100%)
 
 
 == Guidelines
-#line(length: 100%)
-In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen sollen, einheitlich, zielorientiert und sturkturiert an dieser Projektarbeit zu schaffen.
+In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
 
 === Dokumentation
 
@@ -57,7 +60,7 @@ In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als 
 
 === Versionskontrolle
 
-Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`. 
+Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`.
 
 Beim Entwickeln und Testen von neu geschriebener Software müssen neue Branches erstellt werden, wobei die folgenden Namingstandards beachtet werden sollen:
 
@@ -76,19 +79,7 @@ Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich i
 Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 
 == Time Tracking
-#line(length: 100%)
-Für Time-Tracking wird die Webseite Clockify verwendet.
-// TODO
-
-    Describe the project plan as covered in the SEP2 module. A project plan typically consists of the following topics:
-        - Processes, meetings and roles
-        - Phases, iterations and milestones
-        - A *rough* list of things to be done (work items)
-        - Risk management
-        - Planning Tools (issue tracker, time tracker, ...)
-    
-    You should *_not_* describe your *technical solution* in this chapter. It is all about organizing your project.
+Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
 
 == Issue & Project Tracking Software
-#line(length: 100%)
-Um Work-Items erstellen zu können wird *Jira* verwendet. *Jira* erleichtert uns, den Überblick darüber zu behalten, wie viele Features noch implementiert werden müssen und respektive, wie viel Zeit diese in Anspruch nehmen. Klicke den folgenden Link an, um zur Übersicht des Projekts auf Jira zu kommen: #link("https://andrasts.atlassian.net/jira/software/projects/SCRUM/boards/1", "KahoOST Jira").
+Um Work-Items erstellen zu können wird *Jira* verwendet. Jira erleichtert uns, den Überblick darüber zu behalten, wie viele Features noch implementiert werden müssen und respektive, wie viel Zeit diese in Anspruch nehmen. Klicke den folgenden Link an, um zur Übersicht des Projekts auf Jira zu kommen: #link("https://andrasts.atlassian.net/jira/software/projects/SCRUM/boards/1", "KahoOST Jira").
