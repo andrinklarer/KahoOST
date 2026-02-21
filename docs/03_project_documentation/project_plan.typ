@@ -5,24 +5,21 @@
 
 == Scope -- Estimated Features
 
-Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST
-unflexibel und unpers¨onlich. Wir wollen eine ¨ahnliche Webapplikation erstellen, womit
-Dozenten ein Quiz mit Fragen erstellen k¨onnen (diesen Bereich nennen wir AdminKonsole). Dieses Quiz kann dann in der Vorlesung durchgef¨uhrt werden in Echtzeit mit
-allen Studenten und am Schluss wird eine Rangliste angezeigt.
-Zus¨atzlich bietet Kahoost diese wichtigen Funktionalit¨aten:
-• das exportieren als Anki-Kartenset und CSV
-• eine detailiertere (z.B. schnellstantwortente Person wird hervorgehoben) und visuell ansprechendere Rangliste
-• Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht,
-bei welchen Fragen Nachholbedarf besteht
-• Responsive Layout (Studenten k¨onnen Quiz am Handy oder Laptop l¨osen)
-Mögliche Erweiterungen
-• PDF Export
-• PvP-Modus unter Studenten von existierenden Vorlesungskarten
-• Karten generieren mit ”KI”
-• Zugriff auf Moodle
-• Markdown
-• Quality of Life
+Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
 
+Zusätzlich bietet Kahoost diese wichtigen Funktionalitäten:
+- das Exportieren als Anki-Kartenset und CSV
+- eine detailliertere (z.B. schnellstantwortende Person wird hervorgehoben) und visuell ansprechendere Rangliste
+- Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht, bei welchen Fragen Nachholbedarf besteht
+- Responsive Layout (Studenten können Quiz am Handy oder Laptop lösen)
+
+*Mögliche Erweiterungen*
+- PDF Export
+- PvP-Modus unter Studenten von existierenden Vorlesungskarten
+- Karten generieren mit "KI"
+- Zugriff auf Moodle
+- Markdown
+- Quality of Life
 
 == Ressourcen
 Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung:
@@ -62,7 +59,7 @@ In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als 
 
 === Versionskontrolle
 
-Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`. 
+Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`.
 
 Beim Entwickeln und Testen von neu geschriebener Software müssen neue Branches erstellt werden, wobei die folgenden Namingstandards beachtet werden sollen:
 
