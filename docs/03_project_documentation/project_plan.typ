@@ -54,9 +54,22 @@ Es gilt die 720h Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils d
 == Guidelines
 In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
 
-=== Dokumentation
+=== Software-Dokumentation
+In der Dokumentation dieser Projektarbeit folgen wir die "General Documentation Principles" von WRITE THE DOCS. Unter folgendem Link sind die Dokumentations-Prinzipien im Detail beschrieben: #link("https://www.writethedocs.org/guide/writing/docs-principles/#general-documentation-principles")[General Documentation Principles]. 
+
+In diesem Dokument werden nur die wichtigsten Aspekte der Dokumentations-Prinzipien von WRITE THE DOCS zusammengefasst:
+
+- Accept (some) Repetition in Documentation (ARID): Business Logik sollte -- wenn nötig -- in der Dokumentation erklärt und beschrieben werden. Wiederholungen in der Dokumentation sind teilweise sogar wünschenswert, wenn sie dem Verständnis des Lesers helfen.   
+- Skimmable: Die Dokumentation soll gut strukturiert sein, übersichtlich gestaltet sein und allfällige Fragen ohne Prosa beantworten können. Titel und Namen sollen auch möglichst selbsterklärend sein.
+- Exemplary: Beispiele können dem Leser enorm weiterhelfen, wenn er eine schnelle Antwort sucht. Das Übertreiben von Beispielen ist jedoch keine gute Idee, da das auf Kosten des Prinzips "Skimmable" geht.
+- Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden. 
+- Current: Falsche Dokumentation ist schlimmer als keine Dokumentation. Deshalb ist es wichtig, während der Entwicklung von Software die Dokumentation auch "up-to-date" zu halten.
+
+=== Software-Dokumentation Style Guide
+// TODO
 
 === Code
+// ES-Lint
 
 === Versionskontrolle
 
@@ -68,15 +81,18 @@ Beim Entwickeln und Testen von neu geschriebener Software müssen neue Branches 
 <feature|bugfix|documentation>/<work-item-id>-<titel-des-work-items>
 ```
 
-*Beispiele:*
+Beispiele:
 
 - feature/12-ui-der-loginpage-ueberarbeitet
 - bugfix/32-der-knopf-soll-rot-anstatt-blau-sein
-- documentation/titel-mit-typo-korrigiert
+- dokumentation/titel-mit-typo-korrigiert
 
-Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev` Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können.
+Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev`-Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können.
 
 Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
+
+Vom normalen Workflow darf abgewichen und direkt in den `dev`-Branch gepusht werden, falls die vorgenommene Änderung klein ist, und das Erstellen eines neuen Branches mehr Zeit in Anspruch nimmt, als die Änderung selbst. Zu dieser Kategorie gehören zum Beispiel Typo-Fixes.
+
 
 == Time Tracking
 Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
