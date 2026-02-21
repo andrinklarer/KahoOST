@@ -25,17 +25,7 @@ Mögliche Erweiterungen
 
 
 == Ressourcen
-Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung:
-
-*Personen:* 6 Informatikstudenten, die als Full-Stack-Entwickler tätig sein werden, sowie ein Betreuer, der mit seiner beratenden Funktion zur Seite steht.
-
-*Zeit:* Das Projekt wird über einen Zeitraum von 15 Wochen durchgeführt, was insgesamt 720 Stunden Arbeitszeit für das gesamte Team ergibt.
-
-*Kosten:* Es stehen keine finanziellen Mittel zur Verfügung. Wir setzen ausschliesslich auf kostenlose Ressourcen:
-- *Hardware:* Alle Teammitglieder verfügen über einen eigenen Computer, der für die Entwicklung genutzt werden kann.
-- *Software:* Alle benötigten Software-Tools und -Dienste, wie z.B. GitHub für die Versionskontrolle, Jira für das Projektmanagement und Clockify für die Zeiterfassung, sind kostenlos verfügbar. Auch die Bereitstellung der Webapplikation wird über kostenlose Hosting-Dienste erfolgen.
-
-*Qualität:* Angesichts der begrenzten Ressourcen, insbesondere der Zeit und Kosten, priorisieren wir die Stabilität und Usability. Als Qualitätsanspruch setzen wir uns zum Ziel, ein funktionsfähiges MVP zu erstellen, das die Kernfunktionalitäten unseres Produkts abdeckt. Weitere Qualitätsaspekte wie Performance oder Sicherheit werden zwar auch beachtet, aber nicht auf Kosten der Stabilität oder Usability priorisiert.
+// TODO
 
 #pagebreak()
 #set page(flipped: true)
