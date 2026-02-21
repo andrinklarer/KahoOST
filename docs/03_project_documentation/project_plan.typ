@@ -24,11 +24,19 @@ Mögliche Erweiterungen
 
 == Ressourcen
 #line(length: 100%)
-// TODO
+Es sind keine finanziellen Kosten
+eingeplant, da das Hosting kostenlos zur Verfügung steht, sodass das Projekt ausschliesslich mit der
+vorgesehenen Zeit und dem Einsatz der Teammitglieder umgesetzt werden kann.
 
 == Zeitplan
 #line(length: 100%)
-// TODO
+Das Projekt wird von einem Team aus sechs Personen über einen Zeitraum von 15 Wochen durchge-
+führt, wobei jede Person 8 Stunden pro Woche arbeitet. Dadurch ergibt sich eine Gesamtarbeitszeit
+von 120 Stunden pro Person und 720 Stunden für das gesamte Team.
+
+== Meetings
+#line(length: 100%)
+Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
 
 == Organisation und Rollen
 #line(length: 100%)
