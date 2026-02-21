@@ -1,4 +1,4 @@
-= Requirements
+== Requirements
     Describe the functional and non-functional requirements as covered in the SEP1 module.
 
 == Functional Requirements
