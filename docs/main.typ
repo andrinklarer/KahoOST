@@ -4,6 +4,16 @@
   margin: 1in,
 )
 
+#set text(
+  lang: "de", region: "CH"
+)
+
+#show heading.where(level: 2): it => {
+  it
+  line(length: 100%)
+  v(0.4em)
+}
+
 #include "title-page.typ"
 #pagebreak()
 
@@ -11,18 +21,19 @@
   depth: 2,
 )
 
-#include "instructions.typ" 
-
+#pagebreak()
 = Management Summary 
 #include "01_management_summary/management-summary.typ"
 
-= Product Documentation 
+#pagebreak()
+= Produktdokumentation
 #include "02_product_documentation/requirements.typ"
 #include "02_product_documentation/domain_analysis.typ"
 #include "02_product_documentation/architecture.typ"
 #include "02_product_documentation/quality_measures.typ"
 
-= Project Documentation 
+#pagebreak()
+= Projektdokumentation
 == Project Proposal <project-proposal>
 #include "03_project_documentation/project_proposal.typ"
 #include "03_project_documentation/project_plan.typ"

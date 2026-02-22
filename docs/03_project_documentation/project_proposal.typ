@@ -1,7 +1,6 @@
 *Projekt Name:* KahoOST
 
 #heading(level: 3, numbering: none)[Teammitglieder]
-<teammitglieder>
 #block[
   Gioele Petrillo (#link("mailto:gioele.petrillo@ost.ch")[gioele.petrillo\@ost.ch];)
 

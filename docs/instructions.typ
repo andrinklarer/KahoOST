@@ -1,6 +1,0 @@
-= Instructions for using this template
-
- - The main aim of this document template is to allow you to start working on your project documentation as quickly as possible.
- - In addition to recommending a rough structure for your project documentation, this template also contains instructions related to the content and execution your project. Instructional text is typeset within the LaTeX _instructions_ command defined in _custom.tex_. Make sure that your final submission does not contain any instructional texts.
- - The basic defaults that LaTeX provides have been used whenever possible in order to keep the template as simple as possible for beginners. One can do better. LaTeX also provides additional features such as glossaries, abbreviation lists and indexes that you may find useful. Feel free to customise the typesetting and content of this document as per your requirements, tastes and wishes as you progress with the project.
- - Here is an example of a bibliography reference: @larman_applyingUmlAndPatterns_2004
