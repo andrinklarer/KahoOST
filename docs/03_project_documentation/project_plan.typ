@@ -47,7 +47,22 @@ Es gilt die 720h Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils d
 == Organisation und Rollen
 
 Abhängig von den Fähigkeiten der einzelnen Teammitgliedern wurden verschiedene Rollen zugewiesen.
+Jedes Teammitglied wird am Produkt arbeiten, unabhängig von der eingeteilten Rolle.
+Mitglieder, welche andere Rollen haben als Entwickler, werden weniger Zeit fürs Entwickeln aufbringen und in ihre Rolle investieren.
+Damit jeder die Erfahrung hat, wie ein Meeting geführt werden sollte, werden wir alle 2 Wochen die Rolle des _SCRUM Master_, abwechseln.
 
+#figure(
+table(columns: (auto, auto, auto),
+align: (left, center, left),
+[*Rolle*], [*Beschreibung*], [*Teammitglied*],
+[Project Owner], [Erstellt, priorisiert und verwaltet die Stories.], [Jasmin Fässler],
+[Project Manager], [Verantwortlich für die Einhaltung von Fristen und Anforderungen.], [András Tarlós],
+[SCRUM Master], [Gewährleistet, dass das Team den SCRUM Prinzipien folgt, und führt die internen Meetings. Ist auch zuständig um Aufgaben an die Teammitglieder zu verteilen.], [Wechselnd],
+[Architekt], [Verantwortlich dafür, dass die Projektarchitekturprinzipien, welche er festgelegt hat, eingehalten werden.], [Andrin Klarer],
+[Entwickler], [Setzt die Anforderungen um, entwickelt neue Funktionen und testet sie auch danach.], [Jasmin Fässler\ András Tarlós\ Gioele Petrillo\ Ethan Baumgartner\ Andrin Klarer\ Joris Hänseler],
+),
+caption: [Projektmanagement Rollen]
+)
 
 == Risk Management
 
