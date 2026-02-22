@@ -13,7 +13,8 @@
 
 == Organisation und Rollen
 
-// TODO
+Abhängig von den Fähigkeiten der einzelnen Teammitgliedern wurden verschiedene Rollen zugewiesen.
+
 
 == Risk Management
 

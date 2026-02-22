@@ -1,5 +1,4 @@
-==== Projekt Name: <projekt-name>
-KahoOST
+*Projekt Name:* KahoOST
 
 #heading(level: 3, numbering: none)[Teammitglieder]
 <teammitglieder>

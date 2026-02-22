@@ -1,3 +1,5 @@
+#set heading(numbering: "1.1")
+
 #set page(
   margin: 1in,
 )
@@ -21,6 +23,7 @@
 #include "02_product_documentation/quality_measures.typ"
 
 = Project Documentation 
+== Project Proposal <project-proposal>
 #include "03_project_documentation/project_proposal.typ"
 #include "03_project_documentation/project_plan.typ"
 #include "03_project_documentation/time_tracking_report.typ"
