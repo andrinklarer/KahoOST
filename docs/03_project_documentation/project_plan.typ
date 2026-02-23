@@ -37,7 +37,7 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 #pagebreak()
 #set page(width: 24cm, height: 26cm)
 == Zeitplan
-Es gilt die *720h* Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind. 
+Es gilt die *720h* Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind.
 
 #gantt(yaml("../resources/gantt.yaml"))
 
@@ -58,16 +58,25 @@ Mitglieder, welche andere Rollen haben als Entwickler, werden weniger Zeit fürs
 Damit jeder die Erfahrung hat, wie ein Meeting geführt werden sollte, werden wir alle 2 Wochen die Rolle des _SCRUM Master_, abwechseln.
 
 #figure(
-table(columns: (auto, auto, auto),
-align: (left, center, left),
-[*Rolle*], [*Beschreibung*], [*Teammitglied*],
-[Product Owner], [Erstellt, priorisiert und verwaltet die Stories.], [Jasmin Fässler],
-[Project Manager], [Verantwortlich für die Einhaltung von Fristen und Anforderungen.], [András Tarlós],
-[SCRUM Master], [Gewährleistet, dass das Team den SCRUM Prinzipien folgt, und führt die internen Meetings. Ist auch zuständig um Aufgaben an die Teammitglieder zu verteilen.], [Wechselnd],
-[Architekt], [Verantwortlich dafür, dass die Projektarchitekturprinzipien, welche er festgelegt hat, eingehalten werden.], [Andrin Klarer],
-[Entwickler], [Setzt die Anforderungen um, entwickelt neue Funktionen und testet sie auch danach.], [Jasmin Fässler\ András Tarlós\ Gioele Petrillo\ Ethan Baumgartner\ Andrin Klarer\ Joris Hänseler],
-),
-caption: [Projektmanagement Rollen]
+  table(
+    columns: (auto, auto, auto),
+    align: (left, center, left),
+    [*Rolle*], [*Beschreibung*], [*Teammitglied*],
+    [Product Owner], [Erstellt, priorisiert und verwaltet die Stories.], [Jasmin Fässler],
+    [Project Manager], [Verantwortlich für die Einhaltung von Fristen und Anforderungen.], [András Tarlós],
+    [SCRUM Master],
+    [Gewährleistet, dass das Team den SCRUM Prinzipien folgt, und führt die internen Meetings. Ist auch zuständig um Aufgaben an die Teammitglieder zu verteilen.],
+    [Wechselnd],
+
+    [Architekt],
+    [Verantwortlich dafür, dass die Projektarchitekturprinzipien, welche er festgelegt hat, eingehalten werden.],
+    [Andrin Klarer],
+
+    [Entwickler],
+    [Setzt die Anforderungen um, entwickelt neue Funktionen und testet sie auch danach.],
+    [Jasmin Fässler\ András Tarlós\ Gioele Petrillo\ Ethan Baumgartner\ Andrin Klarer\ Joris Hänseler],
+  ),
+  caption: [Projektmanagement Rollen],
 )
 
 == Risk Management
@@ -77,14 +86,14 @@ caption: [Projektmanagement Rollen]
 In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
 
 === Software-Dokumentation
-In der Dokumentation dieser Projektarbeit folgen wir die "General Documentation Principles" von WRITE THE DOCS. Unter folgendem Link sind die Dokumentations-Prinzipien im Detail beschrieben: #link("https://www.writethedocs.org/guide/writing/docs-principles/#general-documentation-principles")[General Documentation Principles]. 
+In der Dokumentation dieser Projektarbeit folgen wir die "General Documentation Principles" von WRITE THE DOCS. Unter folgendem Link sind die Dokumentations-Prinzipien im Detail beschrieben: #link("https://www.writethedocs.org/guide/writing/docs-principles/#general-documentation-principles")[General Documentation Principles].
 
 In diesem Dokument werden nur die wichtigsten Aspekte der Dokumentations-Prinzipien von WRITE THE DOCS zusammengefasst:
 
-- Accept (some) Repetition in Documentation (ARID): Business Logik sollte -- wenn nötig -- in der Dokumentation erklärt und beschrieben werden. Wiederholungen in der Dokumentation sind teilweise sogar wünschenswert, wenn sie dem Verständnis des Lesers helfen.   
+- Accept (some) Repetition in Documentation (ARID): Business Logik sollte -- wenn nötig -- in der Dokumentation erklärt und beschrieben werden. Wiederholungen in der Dokumentation sind teilweise sogar wünschenswert, wenn sie dem Verständnis des Lesers helfen.
 - Skimmable: Die Dokumentation soll gut strukturiert sein, übersichtlich gestaltet sein und allfällige Fragen ohne Prosa beantworten können. Titel und Namen sollen auch möglichst selbsterklärend sein.
 - Exemplary: Beispiele können dem Leser enorm weiterhelfen, wenn er eine schnelle Antwort sucht. Das Übertreiben von Beispielen ist jedoch keine gute Idee, da das auf Kosten des Prinzips "Skimmable" geht.
-- Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden. 
+- Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden.
 - Current: Falsche Dokumentation ist schlimmer als keine Dokumentation. Deshalb ist es wichtig, während der Entwicklung von Software die Dokumentation auch "up-to-date" zu halten.
 
 Die Sprache der Software-Dokumentation ist ausschliesslich *Englisch*.
