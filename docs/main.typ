@@ -14,6 +14,16 @@
   v(0.4em)
 }
 
+#set page(footer: context [
+  *SE Project -- KahoOST Dokumentation*
+  #h(1fr)
+  #counter(page).display(
+    "1/1",
+    both: true,
+  )
+])
+
+
 #include "title-page.typ"
 #pagebreak()
 

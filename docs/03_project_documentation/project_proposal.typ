@@ -2,15 +2,12 @@
 
 #heading(level: 3, numbering: none)[Teammitglieder]
 #block[
-  Gioele Petrillo (#link("mailto:gioele.petrillo@ost.ch")[gioele.petrillo\@ost.ch];)
-
-  Ethan Baumgartner (#link("mailto:ethan.baumgartner@ost.ch")[ethan.baumgartner\@ost.ch];)
-
-  Jasmin Fässler (#link("mailto:jasmin.faessler@ost.ch")[jasmin.faessler\@ost.ch];)
-
-  Andrin Klarer (#link("mailto:andrin.klarer@ost.ch")[andrin.klarer\@ost.ch];)
-
-  András Tarlós (#link("mailto:andras.tarlos@ost.ch")[andras.tarlos\@ost.ch];)
+  - Gioele Petrillo (#link("mailto:gioele.petrillo@ost.ch")[gioele.petrillo\@ost.ch];)
+  - Ethan Baumgartner (#link("mailto:ethan.baumgartner@ost.ch")[ethan.baumgartner\@ost.ch];)
+  - Jasmin Fässler (#link("mailto:jasmin.faessler@ost.ch")[jasmin.faessler\@ost.ch];)
+  - Andrin Klarer (#link("mailto:andrin.klarer@ost.ch")[andrin.klarer\@ost.ch];)
+  - András Tarlós (#link("mailto:andras.tarlos@ost.ch")[andras.tarlos\@ost.ch];)
+  - Joris Hänseler (#link("mailto:joris.haenseler@ost.ch")[joris.haenseler\@ost.ch];)
 
 ]
 #heading(level: 3, numbering: none)[Verfügbarkeiten]
@@ -25,6 +22,7 @@
   )
 
 ]
+#pagebreak();
 #heading(level: 3, numbering: none)[Vision]
 <vision>
 Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
@@ -32,25 +30,17 @@ Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an de
 Zusätzlich bietet Kahoost diese wichtigen Funktionalitäten:
 
 - das exportieren als Anki-Kartenset und CSV
-
 - eine detailiertere (z.B. schnellstantwortente Person wird hervorgehoben) und visuell ansprechendere Rangliste
-
 - Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht, bei welchen Fragen Nachholbedarf besteht
-
 - Responsive Layout (Studenten können Quiz am Handy oder Laptop lösen)
 
-Mögliche Erweiterungen
+Mögliche Erweiterungen sind:
 
 - PDF Export
-
 - PvP-Modus unter Studenten von existierenden Vorlesungskarten
-
 - Karten generieren mit \"KI\"
-
 - Zugriff auf Moodle
-
 - Markdown
-
 - Quality of Life
 
 #heading(level: 3, numbering: none)[Proposed Realisation]
