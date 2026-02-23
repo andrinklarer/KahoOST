@@ -55,7 +55,7 @@ Damit jeder die Erfahrung hat, wie ein Meeting geführt werden sollte, werden wi
 table(columns: (auto, auto, auto),
 align: (left, center, left),
 [*Rolle*], [*Beschreibung*], [*Teammitglied*],
-[Project Owner], [Erstellt, priorisiert und verwaltet die Stories.], [Jasmin Fässler],
+[Product Owner], [Erstellt, priorisiert und verwaltet die Stories.], [Jasmin Fässler],
 [Project Manager], [Verantwortlich für die Einhaltung von Fristen und Anforderungen.], [András Tarlós],
 [SCRUM Master], [Gewährleistet, dass das Team den SCRUM Prinzipien folgt, und führt die internen Meetings. Ist auch zuständig um Aufgaben an die Teammitglieder zu verteilen.], [Wechselnd],
 [Architekt], [Verantwortlich dafür, dass die Projektarchitekturprinzipien, welche er festgelegt hat, eingehalten werden.], [Andrin Klarer],
@@ -80,9 +80,6 @@ In diesem Dokument werden nur die wichtigsten Aspekte der Dokumentations-Prinzip
 - Exemplary: Beispiele können dem Leser enorm weiterhelfen, wenn er eine schnelle Antwort sucht. Das Übertreiben von Beispielen ist jedoch keine gute Idee, da das auf Kosten des Prinzips "Skimmable" geht.
 - Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden. 
 - Current: Falsche Dokumentation ist schlimmer als keine Dokumentation. Deshalb ist es wichtig, während der Entwicklung von Software die Dokumentation auch "up-to-date" zu halten.
-
-=== Software-Dokumentation Style Guide
-// TODO
 
 === Code
 // ES-Lint
