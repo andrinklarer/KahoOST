@@ -1,0 +1,85 @@
+show-today: false
+# Headers at the top of the gantt chart. Can include `year`, `month`,
+# `week`, or `day`
+headers:
+  - month
+  - week
+
+start: 2026-02-16
+end: 2026-06-12
+
+tasks:
+  - name: RUP Phases
+    subtasks:
+      - name: Inception
+        start: 2026-02-16
+        end: 2026-03-05
+      - name: Elaboration
+        start: 2026-03-06
+        end: 2026-04-05
+      - name: Construction
+        start: 2026-04-06
+        end: 2026-05-20
+      - name: Transition
+        start: 2026-05-21
+        end: 2026-06-12
+  - name: Administration 
+    subtasks:
+      - name: Projekt-Management
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Projekt-Planung
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Requirements-Engineering
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Software-Architektur
+        start: 2026-02-16
+        end: 2026-06-12
+
+  - name: Development
+    intervals:
+      - start: 2026-02-16
+        end: 2026-06-12
+    subtasks:
+      - name: Tooling / Infrastruktur
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Feature A
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Feature B
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Feature C
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Feature D
+        start: 2026-02-16
+        end: 2026-06-12
+      - name: Feature E
+        start: 2026-02-16
+        end: 2026-06-12
+
+milestones:
+  - name: Kickoff-Meeting
+    date: 2026-02-16
+    show-date: true
+  - name: "R1: Initial Project Setup"
+    date: 2026-03-02
+    show-date: true
+  - name: "R2: Requirements"
+    date: 2026-03-16
+    show-date: true
+  - name: "R3: End of Elaboration"
+    date: 2026-03-30
+    show-date: true
+  - name: "R4: Quality"
+    date: 2026-04-13
+    show-date: true
+  - name: "R5: Architecture"
+    date: 2026-04-27
+    show-date: true
+  - name: "R5: Presentation"
+    date: 2026-06-12

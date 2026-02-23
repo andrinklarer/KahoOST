@@ -1,38 +1,44 @@
+#import "@preview/gantty:0.5.1": gantt
+
 #pagebreak()
 = Projektplan
 
-== Scope
-#line(length: 100%)
-Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST
-unflexibel und unpers¨onlich. Wir wollen eine ¨ahnliche Webapplikation erstellen, womit
-Dozenten ein Quiz mit Fragen erstellen k¨onnen (diesen Bereich nennen wir AdminKonsole). Dieses Quiz kann dann in der Vorlesung durchgef¨uhrt werden in Echtzeit mit
-allen Studenten und am Schluss wird eine Rangliste angezeigt.
-Zus¨atzlich bietet Kahoost diese wichtigen Funktionalit¨aten:
-• das exportieren als Anki-Kartenset und CSV
-• eine detailiertere (z.B. schnellstantwortente Person wird hervorgehoben) und visuell ansprechendere Rangliste
-• Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht,
-bei welchen Fragen Nachholbedarf besteht
-• Responsive Layout (Studenten k¨onnen Quiz am Handy oder Laptop l¨osen)
-Mögliche Erweiterungen
-• PDF Export
-• PvP-Modus unter Studenten von existierenden Vorlesungskarten
-• Karten generieren mit ”KI”
-• Zugriff auf Moodle
-• Markdown
-• Quality of Life
+== Scope -- Estimated Features
 
+Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
+
+Zusätzlich bietet Kahoost diese wichtigen Funktionalitäten:
+- das Exportieren als Anki-Kartenset und CSV
+- eine detailliertere (z.B. schnellstantwortende Person wird hervorgehoben) und visuell ansprechendere Rangliste
+- Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht, bei welchen Fragen Nachholbedarf besteht
+- Responsive Layout (Studenten können Quiz am Handy oder Laptop lösen)
+
+*Mögliche Erweiterungen*
+- PDF Export
+- PvP-Modus unter Studenten von existierenden Vorlesungskarten
+- Karten generieren mit "KI"
+- Zugriff auf Moodle
+- Markdown
+- Quality of Life
 
 == Ressourcen
-#line(length: 100%)
-Es sind keine finanziellen Kosten
-eingeplant, da das Hosting kostenlos zur Verfügung steht, sodass das Projekt ausschliesslich mit der
-vorgesehenen Zeit und dem Einsatz der Teammitglieder umgesetzt werden kann.
+Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung:
 
+*Personen:* 6 Informatikstudenten, die als Full-Stack-Entwickler tätig sein werden, sowie ein Betreuer, der mit seiner beratenden Funktion zur Seite steht.
+
+*Zeit:* Das Projekt wird über einen Zeitraum von 15 Wochen durchgeführt, was insgesamt 720 Stunden Arbeitszeit für das gesamte Team ergibt.
+
+*Kosten:* Es stehen keine finanziellen Mittel zur Verfügung. Wir setzen ausschliesslich auf kostenlose Ressourcen:
+- *Hardware:* Alle Teammitglieder verfügen über einen eigenen Computer, der für die Entwicklung genutzt werden kann.
+- *Software:* Alle benötigten Software-Tools und -Dienste, wie z.B. GitHub für die Versionskontrolle, Jira für das Projektmanagement und Clockify für die Zeiterfassung, sind kostenlos verfügbar. Auch die Bereitstellung der Webapplikation wird über kostenlose Hosting-Dienste erfolgen.
+
+*Qualität:* Angesichts der begrenzten Ressourcen, insbesondere der Zeit und Kosten, priorisieren wir die Stabilität und Usability. Als Qualitätsanspruch setzen wir uns zum Ziel, ein funktionsfähiges MVP zu erstellen, das die Kernfunktionalitäten unseres Produkts abdeckt. Weitere Qualitätsaspekte wie Performance oder Sicherheit werden zwar auch beachtet, aber nicht auf Kosten der Stabilität oder Usability priorisiert.
+
+
+#pagebreak()
+#set page(flipped: true)
 == Zeitplan
-#line(length: 100%)
-Das Projekt wird von einem Team aus sechs Personen über einen Zeitraum von 15 Wochen durchge-
-führt, wobei jede Person 8 Stunden pro Woche arbeitet. Dadurch ergibt sich eine Gesamtarbeitszeit
-von 120 Stunden pro Person und 720 Stunden für das gesamte Team.
+Es gilt die 720h Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind. 
 
 == Prozesse
 #line(length: 100%)
@@ -41,27 +47,56 @@ Unser Projekt folgt dem Ansatz **Scrum+**. Dieser kombiniert eine langfristige P
 == Meetings
 #line(length: 100%)
 Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
+#gantt(yaml("../resources/gantt.yaml"))
 
+#pagebreak()
+#set page(flipped: false)
 == Organisation und Rollen
-#line(length: 100%)
 
-// TODO
+Abhängig von den Fähigkeiten der einzelnen Teammitgliedern wurden verschiedene Rollen zugewiesen.
+Jedes Teammitglied wird am Produkt arbeiten, unabhängig von der eingeteilten Rolle.
+Mitglieder, welche andere Rollen haben als Entwickler, werden weniger Zeit fürs Entwickeln aufbringen und in ihre Rolle investieren.
+Damit jeder die Erfahrung hat, wie ein Meeting geführt werden sollte, werden wir alle 2 Wochen die Rolle des _SCRUM Master_, abwechseln.
+
+#figure(
+table(columns: (auto, auto, auto),
+align: (left, center, left),
+[*Rolle*], [*Beschreibung*], [*Teammitglied*],
+[Project Owner], [Erstellt, priorisiert und verwaltet die Stories.], [Jasmin Fässler],
+[Project Manager], [Verantwortlich für die Einhaltung von Fristen und Anforderungen.], [András Tarlós],
+[SCRUM Master], [Gewährleistet, dass das Team den SCRUM Prinzipien folgt, und führt die internen Meetings. Ist auch zuständig um Aufgaben an die Teammitglieder zu verteilen.], [Wechselnd],
+[Architekt], [Verantwortlich dafür, dass die Projektarchitekturprinzipien, welche er festgelegt hat, eingehalten werden.], [Andrin Klarer],
+[Entwickler], [Setzt die Anforderungen um, entwickelt neue Funktionen und testet sie auch danach.], [Jasmin Fässler\ András Tarlós\ Gioele Petrillo\ Ethan Baumgartner\ Andrin Klarer\ Joris Hänseler],
+),
+caption: [Projektmanagement Rollen]
+)
 
 == Risk Management
-#line(length: 100%)
 
 
 == Guidelines
-#line(length: 100%)
-In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen sollen, einheitlich, zielorientiert und sturkturiert an dieser Projektarbeit zu schaffen.
+In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
 
-=== Dokumentation
+=== Software-Dokumentation
+In der Dokumentation dieser Projektarbeit folgen wir die "General Documentation Principles" von WRITE THE DOCS. Unter folgendem Link sind die Dokumentations-Prinzipien im Detail beschrieben: #link("https://www.writethedocs.org/guide/writing/docs-principles/#general-documentation-principles")[General Documentation Principles]. 
+
+In diesem Dokument werden nur die wichtigsten Aspekte der Dokumentations-Prinzipien von WRITE THE DOCS zusammengefasst:
+
+- Accept (some) Repetition in Documentation (ARID): Business Logik sollte -- wenn nötig -- in der Dokumentation erklärt und beschrieben werden. Wiederholungen in der Dokumentation sind teilweise sogar wünschenswert, wenn sie dem Verständnis des Lesers helfen.   
+- Skimmable: Die Dokumentation soll gut strukturiert sein, übersichtlich gestaltet sein und allfällige Fragen ohne Prosa beantworten können. Titel und Namen sollen auch möglichst selbsterklärend sein.
+- Exemplary: Beispiele können dem Leser enorm weiterhelfen, wenn er eine schnelle Antwort sucht. Das Übertreiben von Beispielen ist jedoch keine gute Idee, da das auf Kosten des Prinzips "Skimmable" geht.
+- Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden. 
+- Current: Falsche Dokumentation ist schlimmer als keine Dokumentation. Deshalb ist es wichtig, während der Entwicklung von Software die Dokumentation auch "up-to-date" zu halten.
+
+=== Software-Dokumentation Style Guide
+// TODO
 
 === Code
+// ES-Lint
 
 === Versionskontrolle
 
-Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`. 
+Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`.
 
 Beim Entwickeln und Testen von neu geschriebener Software müssen neue Branches erstellt werden, wobei die folgenden Namingstandards beachtet werden sollen:
 
@@ -69,30 +104,21 @@ Beim Entwickeln und Testen von neu geschriebener Software müssen neue Branches 
 <feature|bugfix|documentation>/<work-item-id>-<titel-des-work-items>
 ```
 
-*Beispiele:*
+Beispiele:
 
 - feature/12-ui-der-loginpage-ueberarbeitet
 - bugfix/32-der-knopf-soll-rot-anstatt-blau-sein
-- documentation/titel-mit-typo-korrigiert
+- dokumentation/titel-mit-typo-korrigiert
 
-Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev` Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können.
+Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev`-Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können.
 
 Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 
-== Time Tracking
-#line(length: 100%)
-Für Time-Tracking wird die Webseite Clockify verwendet.
-// TODO
+Vom normalen Workflow darf abgewichen und direkt in den `dev`-Branch gepusht werden, falls die vorgenommene Änderung klein ist, und das Erstellen eines neuen Branches mehr Zeit in Anspruch nimmt, als die Änderung selbst. Zu dieser Kategorie gehören zum Beispiel Typo-Fixes.
 
-    Describe the project plan as covered in the SEP2 module. A project plan typically consists of the following topics:
-        - Processes, meetings and roles
-        - Phases, iterations and milestones
-        - A *rough* list of things to be done (work items)
-        - Risk management
-        - Planning Tools (issue tracker, time tracker, ...)
-    
-    You should *_not_* describe your *technical solution* in this chapter. It is all about organizing your project.
+
+== Time Tracking
+Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
 
 == Issue & Project Tracking Software
-#line(length: 100%)
-Um Work-Items erstellen zu können wird *Jira* verwendet. *Jira* erleichtert uns, den Überblick darüber zu behalten, wie viele Features noch implementiert werden müssen und respektive, wie viel Zeit diese in Anspruch nehmen. Klicke den folgenden Link an, um zur Übersicht des Projekts auf Jira zu kommen: #link("https://andrasts.atlassian.net/jira/software/projects/SCRUM/boards/1", "KahoOST Jira").
+Um Work-Items erstellen zu können wird *Jira* verwendet. Jira erleichtert uns, den Überblick darüber zu behalten, wie viele Features noch implementiert werden müssen und respektive, wie viel Zeit diese in Anspruch nehmen. Klicke den folgenden Link an, um zur Übersicht des Projekts auf Jira zu kommen: #link("https://andrasts.atlassian.net/jira/software/projects/SCRUM/boards/1", "KahoOST Jira").
