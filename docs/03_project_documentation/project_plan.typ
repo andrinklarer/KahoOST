@@ -34,6 +34,10 @@ Das Projekt wird von einem Team aus sechs Personen über einen Zeitraum von 15 W
 führt, wobei jede Person 8 Stunden pro Woche arbeitet. Dadurch ergibt sich eine Gesamtarbeitszeit
 von 120 Stunden pro Person und 720 Stunden für das gesamte Team.
 
+== Prozesse
+#line(length: 100%)
+Unser Projekt folgt dem Ansatz **Scrum+**. Dieser kombiniert eine langfristige Planung und Grobstrukturierung anhand des **Rational Unified Process (RUP)** mit einer kurzfristigen Planung, Umsetzung und Steuerung des wöchentlichen Arbeitsfortschritts mittels **Scrum**.
+
 == Meetings
 #line(length: 100%)
 Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
