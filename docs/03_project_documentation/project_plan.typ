@@ -33,6 +33,7 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 - *Software:* Alle benötigten Software-Tools und -Dienste, wie z.B. GitHub für die Versionskontrolle, Jira für das Projektmanagement und Clockify für die Zeiterfassung, sind kostenlos verfügbar. Auch die Bereitstellung der Webapplikation wird über kostenlose Hosting-Dienste erfolgen.
 
 *Qualität:* Angesichts der begrenzten Ressourcen, insbesondere der Zeit und Kosten, priorisieren wir die Stabilität und Usability. Als Qualitätsanspruch setzen wir uns zum Ziel, ein funktionsfähiges MVP zu erstellen, das die Kernfunktionalitäten unseres Produkts abdeckt. Weitere Qualitätsaspekte wie Performance oder Sicherheit werden zwar auch beachtet, aber nicht auf Kosten der Stabilität oder Usability priorisiert.
+#gantt(yaml("../resources/gantt.yaml"))
 
 
 #pagebreak()
@@ -47,7 +48,6 @@ Unser Projekt folgt dem Ansatz **Scrum+**. Dieser kombiniert eine langfristige P
 == Meetings
 #line(length: 100%)
 Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
-#gantt(yaml("../resources/gantt.yaml"))
 
 #pagebreak()
 #set page(flipped: false)
