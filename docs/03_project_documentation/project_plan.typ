@@ -41,6 +41,7 @@ Es gilt die *720h* Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils
 
 #gantt(yaml("../resources/gantt.yaml"))
 
+#set page("us-letter")
 #pagebreak()
 == Prozesse
 Unser Projekt folgt dem Ansatz *Scrum+*. Dieser kombiniert eine langfristige Planung und Grobstrukturierung anhand des *Rational Unified Process (RUP)* mit einer kurzfristigen Planung, Umsetzung und Steuerung des wöchentlichen Arbeitsfortschritts mittels *Scrum*.
