@@ -9,29 +9,29 @@ start: 2026-02-16
 end: 2026-06-12
 
 tasks:
-  - name: RUP Phases
+  - name: RUP Phasen
     subtasks:
       - name: Inception
         start: 2026-02-16
-        end: 2026-03-05
+        end: 2026-02-23
       - name: Elaboration
-        start: 2026-03-06
-        end: 2026-04-05
+        start: 2026-02-23
+        end: 2026-03-26
       - name: Construction
-        start: 2026-04-06
-        end: 2026-05-20
+        start: 2026-03-26
+        end: 2026-05-26
       - name: Transition
-        start: 2026-05-21
-        end: 2026-06-12
-  - name: Administration 
+        start: 2026-05-26
+        end: 2026-06-01
+  - name: Administration
     subtasks:
-      - name: Projekt-Management
+      - name: Projekt-Management (120h)
         start: 2026-02-16
         end: 2026-06-12
-      - name: Projekt-Planung
+      - name: Projekt-Planung (60h)
         start: 2026-02-16
         end: 2026-06-12
-      - name: Requirements-Engineering
+      - name: Requirements-Engineering (40h)
         start: 2026-02-16
         end: 2026-06-12
       - name: Software-Architektur
@@ -43,22 +43,22 @@ tasks:
       - start: 2026-02-16
         end: 2026-06-12
     subtasks:
-      - name: Tooling / Infrastruktur
+      - name: Benutzerverwaltung
         start: 2026-02-16
         end: 2026-06-12
-      - name: Feature A
+      - name: Quizze erstellen und verwalten
         start: 2026-02-16
         end: 2026-06-12
-      - name: Feature B
+      - name: Quiz spielen
         start: 2026-02-16
         end: 2026-06-12
-      - name: Feature C
+      - name: Quiz Statistik
         start: 2026-02-16
         end: 2026-06-12
-      - name: Feature D
+      - name: Quiz Dashboard
         start: 2026-02-16
         end: 2026-06-12
-      - name: Feature E
+      - name: Weitere Seiten
         start: 2026-02-16
         end: 2026-06-12
 
