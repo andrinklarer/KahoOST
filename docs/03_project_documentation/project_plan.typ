@@ -39,7 +39,34 @@ Mögliche Erweiterungen
 #line(length: 100%)
 #image("../images/risks-v1.png")
 
-Zusammengefasst gibt es 3 Arten von Risiken: Benutzerfreundlichkeit, mögliche Sicherheitslücken und unvorhersehbare Probleme bei genutzten Drittanbieter-Diensten (wie Vercel). Wir vertrauen auf die Drittanbieter, da es bisher keine grossen Probleme gab. Wir halten unsere App auf dem neusten Stand um nicht Opfer von z.B. React Sicherheitslücken zu werden. Da wir iterativ arbeiten können wir die Benutzerfreundlichkeit früh bei einem MVP testen und können uns dementsprechend agil Zeit für Anpassungen der UX einplanen.
+
+Unsere Risiken konnten wir in fünf Kategorien unterteilen. Angesichts unserer begrenzten Ressourcen und der Fokussierung auf ein funktionsfähiges MVP setzen wir auf eine Kombination aus agiler Mitigation und bewusster Risikoakzeptanz.
+
++ *Produktrisiken*
+  - *Risiko:* KahoOST bietet keinen Mehrwert gegenüber anderen Tools oder ist zu umständlich.
+  - *Mitigation:* Wir arbeiten iterativ mit Scrum+ und entwickeln schnell ein MVP. Wir testen dieses frühzeitig, um agil auf Feedback zu reagieren.
+
++ *Infrastruktur- & Architekturrisiken*
+  - *Risiko:* Der (kostenlose) Hosting-Anbieter limitiert WebSockets, was bei einer ganzen Schulklasse zu Verbindungsabbrüchen führt.
+  - *Mitigation:* Durch einen Lasttest prüfen wir, ob beim Produktlaunch auf einen kostenpflichtigen Plan umgestiegen werden muss.
+  - *Risiko:* Die Firewall des OST-Netzwerks blockiert unsere Applikation.
+  - *Mitigation:* Wir testen die Verbindung aus dem OST-WLAN, um auf andere Protokolle ausweichen zu können.
+  - *Risiko:* Ausfall von essenziellen Drittanbieter-Diensten (z.B. Vercel, Supabase, GitHub).
+  - *Mitigation:* Da keine finanziellen Mittel für Fallback-Server zur Verfügung stehen, akzeptieren wir dieses Restrisiko bewusst (Risikoakzeptanz).
+
++ *Scope- & Zeitrisiken*
+  - *Risiko:* Der geplante Scope oder die Umsetzung der detaillierten Rangliste und der Heatmap mit Chart.js erweist sich als technisch zu komplex für den geplanten Zeitrahmen.
+  - *Mitigation:* Wir priorisieren die Kernfunktionen des MVP und weichen, falls notwendig, auf simplere HTML/CSS-Tabellen aus.
+
++ *Sicherheitsrisiken*
+  - *Risiko:* Studierende fälschen Requests, um sich einen Vorteil in der Rangliste zu verschaffen.
+  - *Mitigation:* Sämtliche eingehenden Requests werden serverseitig validiert.
+  - *Risiko:* Sicherheitslücken in genutzten Frameworks (z.B. React) werden ausgenutzt.
+  - *Mitigation:* Wir halten unsere Abhängigkeiten stets auf dem neuesten Stand, um bekannte Sicherheitslücken zu schließen.
+
++ *Teamrisiken*
+  - *Risiko:* Einzelne Teammitglieder sind exklusive Admins für kritische Tools
+  - *Mitigation:* Wir vergeben, wo möglich, Admin-Rechte an mindestens zwei Personen. Durch unser öffentliches GitHub-Repository und die leicht reproduzierbare Vercel-Konfiguration minimieren wir zudem den Schaden bei einem Zugriffsverlust.
 
 == Guidelines
 #line(length: 100%)
