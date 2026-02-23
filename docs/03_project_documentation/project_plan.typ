@@ -7,7 +7,7 @@
 
 Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
 
-Zusätzlich bietet Kahoost diese wichtigen Funktionalitäten:
+Zusätzlich bietet KahoOST diese wichtigen Funktionalitäten:
 - das Exportieren als Anki-Kartenset und CSV
 - eine detailliertere (z.B. schnellstantwortende Person wird hervorgehoben) und visuell ansprechendere Rangliste
 - Es wird eine Zusammenfassung/Heatmap angezeigt, damit der Dozierende sieht, bei welchen Fragen Nachholbedarf besteht
@@ -33,24 +33,22 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 - *Software:* Alle benötigten Software-Tools und -Dienste, wie z.B. GitHub für die Versionskontrolle, Jira für das Projektmanagement und Clockify für die Zeiterfassung, sind kostenlos verfügbar. Auch die Bereitstellung der Webapplikation wird über kostenlose Hosting-Dienste erfolgen.
 
 *Qualität:* Angesichts der begrenzten Ressourcen, insbesondere der Zeit und Kosten, priorisieren wir die Stabilität und Usability. Als Qualitätsanspruch setzen wir uns zum Ziel, ein funktionsfähiges MVP zu erstellen, das die Kernfunktionalitäten unseres Produkts abdeckt. Weitere Qualitätsaspekte wie Performance oder Sicherheit werden zwar auch beachtet, aber nicht auf Kosten der Stabilität oder Usability priorisiert.
-#gantt(yaml("../resources/gantt.yaml"))
-
 
 #pagebreak()
-#set page(flipped: true)
+#set page(width: 24cm, height: 26cm)
 == Zeitplan
-Es gilt die 720h Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind. 
+Es gilt die *720h* Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind. 
 
+#gantt(yaml("../resources/gantt.yaml"))
+
+#pagebreak()
 == Prozesse
-#line(length: 100%)
-Unser Projekt folgt dem Ansatz **Scrum+**. Dieser kombiniert eine langfristige Planung und Grobstrukturierung anhand des **Rational Unified Process (RUP)** mit einer kurzfristigen Planung, Umsetzung und Steuerung des wöchentlichen Arbeitsfortschritts mittels **Scrum**.
+Unser Projekt folgt dem Ansatz *Scrum+*. Dieser kombiniert eine langfristige Planung und Grobstrukturierung anhand des *Rational Unified Process (RUP)* mit einer kurzfristigen Planung, Umsetzung und Steuerung des wöchentlichen Arbeitsfortschritts mittels *Scrum*.
 
 == Meetings
-#line(length: 100%)
 Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
 
 #pagebreak()
-#set page(flipped: false)
 == Organisation und Rollen
 
 Abhängig von den Fähigkeiten der einzelnen Teammitgliedern wurden verschiedene Rollen zugewiesen.
@@ -88,6 +86,8 @@ In diesem Dokument werden nur die wichtigsten Aspekte der Dokumentations-Prinzip
 - Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden. 
 - Current: Falsche Dokumentation ist schlimmer als keine Dokumentation. Deshalb ist es wichtig, während der Entwicklung von Software die Dokumentation auch "up-to-date" zu halten.
 
+Die Sprache der Software-Dokumentation ist ausschliesslich *Englisch*.
+
 === Code
 // ES-Lint
 
@@ -98,14 +98,14 @@ Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt
 Beim Entwickeln und Testen von neu geschriebener Software müssen neue Branches erstellt werden, wobei die folgenden Namingstandards beachtet werden sollen:
 
 ```text
-<feature|bugfix|documentation>/<work-item-id>-<titel-des-work-items>
+<feature|bugfix|documentation>/<work-item-id>-<titel-of-work-item>
 ```
 
 Beispiele:
 
-- feature/12-ui-der-loginpage-ueberarbeitet
-- bugfix/32-der-knopf-soll-rot-anstatt-blau-sein
-- dokumentation/titel-mit-typo-korrigiert
+- feature/12-ui-of-the-loginpage-redone
+- bugfix/32-the-button-should-be-red-instead-of-blu
+- dokumentation/fixed-the-typo-in-the-title-page
 
 Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev`-Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können.
 
@@ -113,6 +113,7 @@ Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 
 Vom normalen Workflow darf abgewichen und direkt in den `dev`-Branch gepusht werden, falls die vorgenommene Änderung klein ist, und das Erstellen eines neuen Branches mehr Zeit in Anspruch nimmt, als die Änderung selbst. Zu dieser Kategorie gehören zum Beispiel Typo-Fixes.
 
+Die neu erstellte Branchnamen sowie alle Commits sollen auf *Englisch* geschrieben sein.
 
 == Time Tracking
 Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
