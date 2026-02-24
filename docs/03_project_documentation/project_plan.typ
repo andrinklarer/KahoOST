@@ -36,8 +36,8 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 
 #pagebreak()
 #set page(width: 24cm, height: 26cm)
-== Zeitplan
-Es gilt die *720h* Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind.
+== Zeitplan -- Langfristiger Plan
+Es gilt die *720h* Arbeitszeit einzuplanen.
 
 #gantt(yaml("../resources/gantt.yaml"))
 
