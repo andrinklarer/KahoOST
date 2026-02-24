@@ -48,6 +48,7 @@ Unser Projekt folgt dem Ansatz *Scrum+*. Dieser kombiniert eine langfristige Pla
 
 == Meetings
 Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
+Auf die von SCRUM diktierten Dailys haben wir verzichtet, da das Team mit dem beschränkten Zeitbudget nicht jeden Tag am Projekt arbeitet und dies im Kontext dieser Projektarbeit keinen Mehrwert bringen würde.
 
 #pagebreak()
 == Organisation und Rollen
