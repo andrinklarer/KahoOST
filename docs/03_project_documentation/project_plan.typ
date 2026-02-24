@@ -96,10 +96,16 @@ In diesem Dokument werden nur die wichtigsten Aspekte der Dokumentations-Prinzip
 - Consistent: Inhaltlich konsistent Sprache und Formatierung verwenden.
 - Current: Falsche Dokumentation ist schlimmer als keine Dokumentation. Deshalb ist es wichtig, während der Entwicklung von Software die Dokumentation auch "up-to-date" zu halten.
 
-Die Sprache der Software-Dokumentation ist ausschliesslich *Englisch*.
+Die Sprache der Software-Dokumentation ist ausschliesslich *Deutsch*.
 
 === Code
-// ES-Lint
+Wir haben uns bewusst dagegen entschieden, einen Styleguide einer grossen Firma zu übernehmen, da diese uns in unserem Rahmen zu stark einschränken würden. Stattdessen versuchen wir, mit den folgenden Massnahmen den gängigsten Regeln zu folgen:
+
+- *Linting (ESLint):* Wir nutzen die von Next.js empfohlene Standardkonfiguration. Sie fängt die wichtigsten Fehler ab, ohne bei stilistischen Kleinigkeiten zu reklamieren.
+- *Automatisierte Formatierung (Prettier):* Wir verwenden Prettier als Code-Formatter. Durch das Prettier Plugin wird der Code automatisch beim Speichern formatiert.
+- *TypeScript:* Wir aktivieren den `strict`-Mode in TypeScript. Dieser fängt typbedingte Bugs frühzeitig ab, `any` sollte vermieden werden.
+- *Naming Conventions:* React-Komponenten, Interfaces und Types werden in `PascalCase` geschrieben. Variablen, Funktionen und Hooks werden in `camelCase` benannt.
+- *Sprache:* Der Code und die Kommentare werden auf Englisch geschrieben.
 
 === Versionskontrolle
 
