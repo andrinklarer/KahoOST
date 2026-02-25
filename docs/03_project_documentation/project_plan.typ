@@ -7,6 +7,13 @@
 
 Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
 
+Wir planen, folgende Epics zu implementieren:
+- *Quiz Dashboard:* Übersicht über alle erstellten Quizze, Möglichkeit zum Starten eines Quiz etc.
+- *User Authentication:* Möglichkeit für Dozierende und Studierende, sich zu registrieren und anzumelden.
+- *Quiz Übersicht/Statistik:* Detaillierte Übersicht über die Ergebnisse eines Quiz.
+- *Quiz erstellen und verwalten:* Möglichkeit für Dozierende, Fragen zu erstellen, zu bearbeiten und zu löschen.
+- *Während eines Quiz:* Anzeige der Fragen, Antwortmöglichkeiten, Echtzeit-Interaktion, Rangliste etc.
+
 Zusätzlich bietet KahoOST diese wichtigen Funktionalitäten:
 - das Exportieren als Anki-Kartenset und CSV
 - eine detailliertere (z.B. schnellstantwortende Person wird hervorgehoben) und visuell ansprechendere Rangliste
