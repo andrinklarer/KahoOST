@@ -35,17 +35,24 @@ Mögliche Erweiterungen
 
 // TODO
 
-== Risk Management
+== Risiko Management
 #line(length: 100%)
-#image("../images/risks-v1.png")
-
+// Miroboard https://miro.com/app/board/uXjVG_S52h0=/
+#figure(
+  image("../images/risks-v1.png", width: 100%),
+  caption: [
+    Risiko Matrix V1
+  ],
+)
 
 Unsere Risiken konnten wir in fünf Kategorien unterteilen. Angesichts unserer begrenzten Ressourcen und der Fokussierung auf ein funktionsfähiges MVP setzen wir auf eine Kombination aus agiler Mitigation und bewusster Risikoakzeptanz.
 
+// gelb (Farbe für Miro)
 + *Produktrisiken*
   - *Risiko:* KahoOST bietet keinen Mehrwert gegenüber anderen Tools oder ist zu umständlich.
   - *Mitigation:* Wir arbeiten iterativ mit Scrum+ und entwickeln schnell ein MVP. Wir testen dieses frühzeitig, um agil auf Feedback zu reagieren.
 
+// rot
 + *Infrastruktur- & Architekturrisiken*
   - *Risiko:* Der (kostenlose) Hosting-Anbieter limitiert WebSockets, was bei einer ganzen Schulklasse zu Verbindungsabbrüchen führt.
   - *Mitigation:* Durch einen Lasttest prüfen wir, ob beim Produktlaunch auf einen kostenpflichtigen Plan umgestiegen werden muss.
@@ -54,16 +61,19 @@ Unsere Risiken konnten wir in fünf Kategorien unterteilen. Angesichts unserer b
   - *Risiko:* Ausfall von essenziellen Drittanbieter-Diensten (z.B. Vercel, Supabase, GitHub).
   - *Mitigation:* Da keine finanziellen Mittel für Fallback-Server zur Verfügung stehen, akzeptieren wir dieses Restrisiko bewusst (Risikoakzeptanz).
 
+// rosa
 + *Scope- & Zeitrisiken*
   - *Risiko:* Der geplante Scope oder die Umsetzung der detaillierten Rangliste und der Heatmap mit Chart.js erweist sich als technisch zu komplex für den geplanten Zeitrahmen.
   - *Mitigation:* Wir priorisieren die Kernfunktionen des MVP und weichen, falls notwendig, auf simplere HTML/CSS-Tabellen aus.
 
+// grün
 + *Sicherheitsrisiken*
   - *Risiko:* Studierende fälschen Requests, um sich einen Vorteil in der Rangliste zu verschaffen.
   - *Mitigation:* Sämtliche eingehenden Requests werden serverseitig validiert.
   - *Risiko:* Sicherheitslücken in genutzten Frameworks (z.B. React) werden ausgenutzt.
   - *Mitigation:* Wir halten unsere Abhängigkeiten stets auf dem neuesten Stand, um bekannte Sicherheitslücken zu schließen.
 
+// blau
 + *Teamrisiken*
   - *Risiko:* Einzelne Teammitglieder sind exklusive Admins für kritische Tools
   - *Mitigation:* Wir vergeben, wo möglich, Admin-Rechte an mindestens zwei Personen. Durch unser öffentliches GitHub-Repository und die leicht reproduzierbare Vercel-Konfiguration minimieren wir zudem den Schaden bei einem Zugriffsverlust.
