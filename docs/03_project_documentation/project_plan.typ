@@ -1,6 +1,5 @@
 #import "@preview/gantty:0.5.1": gantt
 
-#pagebreak()
 = Projektplan
 
 == Scope -- Estimated Features
@@ -46,7 +45,11 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 == Zeitplan
 Es gilt die *720h* Arbeitszeit einzuplanen. Einmal pro Woche trifft sich jeweils das gesamte Team, um Fortschritte zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen. Zusätzlich zu den wöchentlichen Meetings werden wir alle zwei Wochen ein Meeting mit unserem Betreuer abhalten, um Feedback zu erhalten und sicherzustellen, dass wir auf dem richtigen Weg sind.
 
-#gantt(yaml("../resources/gantt.yaml"))
+#figure(
+  gantt(yaml("../resources/gantt.yaml")),
+  kind: image,
+  caption: [Zeitplan],
+)
 
 #set page("us-letter")
 #pagebreak()
@@ -178,6 +181,26 @@ Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 Vom normalen Workflow darf abgewichen und direkt in den `dev`-Branch gepusht werden, falls die vorgenommene Änderung klein ist, und das Erstellen eines neuen Branches mehr Zeit in Anspruch nimmt, als die Änderung selbst. Zu dieser Kategorie gehören zum Beispiel Typo-Fixes.
 
 Die neu erstellte Branchnamen sowie alle Commits sollen auf *Englisch* geschrieben sein.
+
+=== Dokumentation <guideline-dokumentation>
+Damit die Dokumentation einheitlich geschrieben wird und somit übersichtlicher ist für das Team, haben wir folgende Guidelines definiert.
+
+==== Bilder & Tabellen
+Bilder und Tabellen müssen immer eine Beschreibung haben, damit ein Tabellen- und Bilderverzeichniss erstellt werden kann. Dazu muss beim Erstellen von Bildern und Tabellen das `caption` Attribut benutzt werden.
+
+*Beispiel*
+```typst
+#image("pfad/zum/bild.png", width: 80%, caption: [Beschreibung des Bildes]) <bild-label>
+
+#figure(
+  table(
+  columns: (auto, auto),
+  [Header 1, Header 2],
+  [Inhalt 1, Inhalt 2],
+  )
+caption: [Beschreibung der Tabelle]) <tabellen-label>
+
+```
 
 == Time Tracking
 Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
