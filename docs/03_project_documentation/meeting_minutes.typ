@@ -2,24 +2,30 @@
 
 == Überblick
 
-#table(
-  columns: 4,
-  inset: 6pt,
-  stroke: 0.5pt,
-  [Datum],[Zeit],[Name],[Teilnehmende],
-  [16.02.2026],[16:00-16:45],[Informelles Meeting, Projekt Kick-off],[Alle],
-  [16.02.2026],[17:00-17:15],[Rollenaufteilung & Organisation],[EB,AK,JF,JH,AT]
+#figure(
+  table(
+    columns: 4,
+    inset: 6pt,
+    stroke: 0.5pt,
+    [Datum], [Zeit], [Name], [Teilnehmende],
+    [16.02.2026], [16:00-16:45], [Informelles Meeting, Projekt Kick-off], [EB,AK,JF,GP,AT, BAK],
+    [16.02.2026], [17:00-17:15], [Rollenaufteilung & Organisation], [EB,GP,AK,JF,JH,AT],
+  ),
+  kind: table,
+  caption: [Meeting Verlauf und Teilnehmende],
 )
-*EB*=Ethan Baumgartner, *AK*=Andrin Klarer, *JF*=Jasmin Fässler, *JH*=Joris Hänseler, 
-*AT*=András Tarlós, *BAK*=(Betreuer) Abinas Kuganathan
+*EB*=Ethan Baumgartner, *GP*=Gioele Petrillo,
+*AK*=Andrin Klarer, *JF*=Jasmin Fässler,
+*JH*=Joris Hänseler, *AT*=András Tarlós,
+*BAK*=(Betreuer) Abinas Kuganathan
 
 == Meeting-Details
-- *Datum:* 
-- *Uhrzeit:* 
-- *Ort / Plattform:* 
-- *Leitung:* 
-- *Protokollführung:* 
-- *Teilnehmende:* 
+- *Datum:*
+- *Uhrzeit:*
+- *Ort / Plattform:*
+- *Leitung:*
+- *Protokollführung:*
+- *Teilnehmende:*
 
 == Agenda
 #enum[
@@ -29,26 +35,30 @@
 ]
 
 == Besprochene Punkte & Entscheidungen
-#table(
-  columns: (2fr, 3fr, 2fr, 2fr),
-  inset: 6pt,
-  stroke: 0.5pt,
-  [
-    *Thema*,
-    *Diskussion / Kernaussagen*,
-    *Entscheidung*,
-    *Verantwortlich*
-  ],
-  [
-    Thema 1,
-    Notizen zur Diskussion,
-    Beschluss / Ergebnis,
-    Name
-  ],
-  [
-    Thema 2,
-    Notizen zur Diskussion,
-    Beschluss / Ergebnis,
-    Name
-  ],
+#figure(
+  table(
+    columns: (2fr, 3fr, 2fr, 2fr),
+    inset: 6pt,
+    stroke: 0.5pt,
+    [
+      *Thema*,
+      *Diskussion / Kernaussagen*,
+      *Entscheidung*,
+      *Verantwortlich*
+    ],
+    [
+      Thema 1,
+      Notizen zur Diskussion,
+      Beschluss / Ergebnis,
+      Name
+    ],
+    [
+      Thema 2,
+      Notizen zur Diskussion,
+      Beschluss / Ergebnis,
+      Name
+    ],
+  ),
+  kind: table,
+  caption: [Besprochene Produkte & Entscheidungen],
 )

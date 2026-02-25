@@ -17,18 +17,33 @@
     align(
       center,
     )[#table(
-        columns: 6, align: (center, center, center, center, center, center,), table.header([Time slot], [Mon], [Tue], [Wed], [Thu], [Fri]), table.hline(), [08h00-09h00], [-], [-], [-], [-], [XR], [09h00-10h00], [-], [-], [-], [-], [XR], [10h00-11h00], [-], [-], [-], [-], [XR], [11h00-12h00], [-], [-], [-], [-], [XR], [12h00-13h00], [XR], [-], [-], [XR], [XR], [13h00-14h00], [-], [-], [-], [-], [XR], [14h00-15h00], [-], [-], [-], [-], [XR], [15h00-16h00], [XR], [-], [-], [-], [XR], [16h00-17h00], [XR], [-], [-], [-], [XR], [17h00-18h00], [-], [-], [-], [-], [XR], [18h00-19h00], [-], [-], [-], [-], [XR],
-      )], kind: table,
+        columns: 6,
+        align: (center, center, center, center, center, center),
+        table.header([Time slot], [Mon], [Tue], [Wed], [Thu], [Fri]),
+        table.hline(),
+        [08h00-09h00], [-], [-], [-], [-], [XR],
+        [09h00-10h00], [-], [-], [-], [-], [XR],
+        [10h00-11h00], [-], [-], [-], [-], [XR],
+        [11h00-12h00], [-], [-], [-], [-], [XR],
+        [12h00-13h00], [XR], [-], [-], [XR], [XR],
+        [13h00-14h00], [-], [-], [-], [-], [XR],
+        [14h00-15h00], [-], [-], [-], [-], [XR],
+        [15h00-16h00], [XR], [-], [-], [-], [XR],
+        [16h00-17h00], [XR], [-], [-], [-], [XR],
+        [17h00-18h00], [-], [-], [-], [-], [XR],
+        [18h00-19h00], [-], [-], [-], [-], [XR],
+      )
+      #table(
+        columns: 2,
+        inset: 6pt,
+        stroke: 0.5pt,
+        [*XR*], [Slot in Rapperswil verfügbar],
+        [*-*], [Slot nicht verfügbar],
+      )],
+    kind: table,
+    caption: [Tabelle Verfügbarkeiten der Mitglieder],
   )
 ]
-
-#table(
-  columns: 2,
-  inset: 6pt,
-  stroke: 0.5pt,
-  [*XR*],[Slot in Rapperswil verfügbar],
-  [*-*],[Slot nicht verfügbar]
-)
 
 #pagebreak();
 #heading(level: 3, numbering: none)[Vision]
