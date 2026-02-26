@@ -1,11 +1,17 @@
 #import "@preview/gantty:0.5.1": gantt
 
-#pagebreak()
 = Projektplan
 
 == Scope -- Estimated Features
 
 Aktuelle Quiz-Tools wie Kahoot, Slido oder Particify sind für den Einsatz an der OST unflexibel und unpersönlich. Wir wollen eine ähnliche Webapplikation erstellen, womit Dozenten ein Quiz mit Fragen erstellen können (diesen Bereich nennen wir Admin-Konsole). Dieses Quiz kann dann in der Vorlesung durchgeführt werden in Echtzeit mit allen Studenten und am Schluss wird eine Rangliste angezeigt.
+
+Wir planen, folgende Epics zu implementieren:
+- *Quiz Dashboard:* Übersicht über alle erstellten Quizze, Möglichkeit zum Starten eines Quiz etc.
+- *User Authentication:* Möglichkeit für Dozierende und Studierende, sich zu registrieren und anzumelden.
+- *Quiz Übersicht/Statistik:* Detaillierte Übersicht über die Ergebnisse eines Quiz.
+- *Quiz erstellen und verwalten:* Möglichkeit für Dozierende, Fragen zu erstellen, zu bearbeiten und zu löschen.
+- *Während eines Quiz:* Anzeige der Fragen, Antwortmöglichkeiten, Echtzeit-Interaktion, Rangliste etc.
 
 Zusätzlich bietet KahoOST diese wichtigen Funktionalitäten:
 - das Exportieren als Anki-Kartenset und CSV
@@ -93,8 +99,48 @@ Damit jeder die Erfahrung hat, wie ein Meeting geführt werden sollte, werden wi
   caption: [Projektmanagement Rollen],
 )
 
-== Risk Management
+== Risiko Management
+#line(length: 100%)
+// Miroboard https://miro.com/app/board/uXjVG_S52h0=/
+#figure(
+  image("../resources/risks-v1.png", width: 100%),
+  caption: [
+    Risiko Matrix V1
+  ],
+)
 
+Unsere Risiken konnten wir in fünf Kategorien unterteilen. Angesichts unserer begrenzten Ressourcen und der Fokussierung auf ein funktionsfähiges MVP setzen wir auf eine Kombination aus agiler Mitigation und bewusster Risikoakzeptanz.
+
+// gelb (Farbe für Miro)
++ *Produktrisiken*
+  - *Risiko:* KahoOST bietet keinen Mehrwert gegenüber anderen Tools oder ist zu umständlich.
+  - *Mitigation:* Wir arbeiten iterativ mit Scrum+ und entwickeln schnell ein MVP. Wir testen dieses frühzeitig, um agil auf Feedback zu reagieren.
+
+// rot
++ *Infrastruktur- & Architekturrisiken*
+  - *Risiko:* Der (kostenlose) Hosting-Anbieter limitiert WebSockets, was bei einer ganzen Schulklasse zu Verbindungsabbrüchen führt.
+  - *Mitigation:* Durch einen Lasttest prüfen wir, ob beim Produktlaunch auf einen kostenpflichtigen Plan umgestiegen werden muss.
+  - *Risiko:* Die Firewall des OST-Netzwerks blockiert unsere Applikation.
+  - *Mitigation:* Wir testen die Verbindung aus dem OST-WLAN, um auf andere Protokolle ausweichen zu können.
+  - *Risiko:* Ausfall von essenziellen Drittanbieter-Diensten (z.B. Vercel, Supabase, GitHub).
+  - *Mitigation:* Da keine finanziellen Mittel für Fallback-Server zur Verfügung stehen, akzeptieren wir dieses Restrisiko bewusst (Risikoakzeptanz).
+
+// rosa
++ *Scope- & Zeitrisiken*
+  - *Risiko:* Der geplante Scope oder die Umsetzung der detaillierten Rangliste und der Heatmap mit Chart.js erweist sich als technisch zu komplex für den geplanten Zeitrahmen.
+  - *Mitigation:* Wir priorisieren die Kernfunktionen des MVP und weichen, falls notwendig, auf simplere HTML/CSS-Tabellen aus.
+
+// grün
++ *Sicherheitsrisiken*
+  - *Risiko:* Studierende fälschen Requests, um sich einen Vorteil in der Rangliste zu verschaffen.
+  - *Mitigation:* Sämtliche eingehenden Requests werden serverseitig validiert.
+  - *Risiko:* Sicherheitslücken in genutzten Frameworks (z.B. React) werden ausgenutzt.
+  - *Mitigation:* Wir halten unsere Abhängigkeiten stets auf dem neuesten Stand, um bekannte Sicherheitslücken zu schließen.
+
+// blau
++ *Teamrisiken*
+  - *Risiko:* Einzelne Teammitglieder sind exklusive Admins für kritische Tools
+  - *Mitigation:* Wir vergeben, wo möglich, Admin-Rechte an mindestens zwei Personen. Durch unser öffentliches GitHub-Repository und die leicht reproduzierbare Vercel-Konfiguration minimieren wir zudem den Schaden bei einem Zugriffsverlust.
 
 == Guidelines
 In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
@@ -144,6 +190,26 @@ Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 Vom normalen Workflow darf abgewichen und direkt in den `dev`-Branch gepusht werden, falls die vorgenommene Änderung klein ist, und das Erstellen eines neuen Branches mehr Zeit in Anspruch nimmt, als die Änderung selbst. Zu dieser Kategorie gehören zum Beispiel Typo-Fixes.
 
 Die neu erstellte Branchnamen sowie alle Commits sollen auf *Englisch* geschrieben sein.
+
+=== Dokumentation <guideline-dokumentation>
+Damit die Dokumentation einheitlich geschrieben wird und somit übersichtlicher ist für das Team, haben wir folgende Guidelines definiert.
+
+==== Bilder & Tabellen
+Bilder und Tabellen müssen immer eine Beschreibung haben, damit ein Tabellen- und Bilderverzeichniss erstellt werden kann. Dazu muss beim Erstellen von Bildern und Tabellen das `caption` Attribut benutzt werden.
+
+*Beispiel*
+```typst
+#image("pfad/zum/bild.png", width: 80%, caption: [Beschreibung des Bildes]) <bild-label>
+
+#figure(
+  table(
+  columns: (auto, auto),
+  [Header 1, Header 2],
+  [Inhalt 1, Inhalt 2],
+  )
+caption: [Beschreibung der Tabelle]) <tabellen-label>
+
+```
 
 == Time Tracking
 Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.

@@ -44,3 +44,10 @@ yarn-error.log*
 
 # idea files
 .idea
+
+
+# nix + direnv (dev setup)
+*.rc
+.direnv
+shell.nix
+.envrc
