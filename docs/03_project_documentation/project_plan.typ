@@ -199,14 +199,17 @@ Bilder und Tabellen müssen immer eine Beschreibung haben, damit ein Tabellen- u
 
 *Beispiel*
 ```typst
-#image("pfad/zum/bild.png", width: 80%, caption: [Beschreibung des Bildes]) <bild-label>
+#figure(
+  image("pfad/zum/bild.png", width: 80%),
+  kind: image,
+  caption: [Beschreibung des Bildes]) <bild-label>
 
 #figure(
   table(
   columns: (auto, auto),
   [Header 1, Header 2],
   [Inhalt 1, Inhalt 2],
-  )
+  ), kind: table,
 caption: [Beschreibung der Tabelle]) <tabellen-label>
 
 ```
