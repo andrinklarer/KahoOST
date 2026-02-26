@@ -37,8 +37,7 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 #pagebreak()
 #set page(width: 24cm, height: 26cm)
 == Zeitplan -- Langfristiger Plan
-Es gilt die *720h* Arbeitszeit einzuplanen.
-
+Es gilt die *720h* Arbeitszeit einzuplanen. Für die langfristige Planung verwendet das Team *Rational Unified Process (RUP)*. Jedes aufgeführte Feature unter "Development" in der Tabelle repräsentiert ein Epic von Jira. 
 #gantt(yaml("../resources/gantt.yaml"))
 
 #set page("us-letter")
@@ -47,8 +46,22 @@ Es gilt die *720h* Arbeitszeit einzuplanen.
 Unser Projekt folgt dem Ansatz *Scrum+*. Dieser kombiniert eine langfristige Planung und Grobstrukturierung anhand des *Rational Unified Process (RUP)* mit einer kurzfristigen Planung, Umsetzung und Steuerung des wöchentlichen Arbeitsfortschritts mittels *Scrum*.
 
 == Meetings
-Wir planen, uns einmal pro Woche für ein Team-Meeting jeweils am Montag von 15:00 bis 16:00 Uhr zu treffen, um den Fortschritt zu besprechen, Herausforderungen zu identifizieren und die nächsten Schritte zu planen.
-Auf die von SCRUM diktierten Dailys haben wir verzichtet, da das Team mit dem beschränkten Zeitbudget nicht jeden Tag am Projekt arbeitet und dies im Kontext dieser Projektarbeit keinen Mehrwert bringen würde.
+Für unsere Projekt-Meetings haben wir uns grösstenteils an den SCRUM-Standards orientiert, sind aber davon abgewichen, wenn sich ein Meeting für unsere Projektarbeit als überflüssig erwiesen hat. Auf die von SCRUM vorgeschriebenen Daily-Meetings haben wir verzichtet, da das Team mit dem beschränkten Zeitbudget nicht jeden Tag am Projekt arbeitet und dies im Kontext dieser Projektarbeit keinen Mehrwert bringt.
+
+Als Team haben wir die in der Tabelle definierten Termine festgelegt:
+
+#figure(
+    table(
+        columns: 3,
+        [*Typ*], [*Beschreibung*], [*Frequenz*],
+        [Weekly Stand-ups], [Jedes Teammitglied erzählt, was er in der letzen Woche erreicht hat und wie der Status bei seinen zugeteilten Work-Items ist.], [Jede Woche am Montag um 15:00-16:00 Uhr.],
+        [Sprint Planning], [Das ist das Kick-off Meeting eines Sprints. Bei der Planung werden die Work-Items für den nächsten Sprint vorbereitet; ein Sprint dauert zwei Wochen.], [Jeder zweite Woche am Freitag. (Uhrzeit kann variieren)],
+      
+        [Sprint Retro], [Dies markiert das Ende eines Sprints. Im Team wird besprochen, wie der Sprint verlaufen ist, und es werden mögliche Verbesserungen werden identifiziert.], [Jeder zweite Woche am Freitag. (Uhrzeit kann variieren)],
+        [Sprint Review], [Die erreichten Ziele und Aufgaben werden dem Betreuer, Abinas Kuganathan, präsentiert.], [Jeden zweiten Montag um 16:00-17:00 Uhr.],
+    ),
+    caption: [Projekt-Meetings],
+)
 
 #pagebreak()
 == Organisation und Rollen
