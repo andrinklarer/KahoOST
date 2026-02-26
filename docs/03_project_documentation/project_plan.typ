@@ -184,7 +184,7 @@ Beispiele:
 - bugfix/32-the-button-should-be-red-instead-of-blu
 - dokumentation/fixed-the-typo-in-the-title-page
 
-Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev`-Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können.
+Nachdem ein neuer Branch erstellt wurde und das gewünschte Update erfolgreich implementiert ist, muss er in den `dev`-Branch gemergt werden; in den `master`-Branch dürfen Änderungen direkt nicht gemergt oder gepusht werden. Der `master`-Branch ist dementsprechend auch geschützt, sodass Entwickler nur mit einer Pull-Request von `dev` nach `master` mergen können. Pull-Requests von `dev`->`master` müssen mindestens von einem Teammitglied bestätigt werden.
 
 Der Workflow sieht im Endeffekt so aus: `feature -> dev -> master`.
 
