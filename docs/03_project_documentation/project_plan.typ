@@ -28,6 +28,7 @@ Zusätzlich bietet KahoOST diese wichtigen Funktionalitäten:
 - Markdown
 - Quality of Life
 
+#pagebreak()
 == Ressourcen
 Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung:
 
@@ -44,11 +45,14 @@ Folgende Ressourcen stehen uns für die Umsetzung dieses Projekts zur Verfügung
 #pagebreak()
 #set page(width: 24cm, height: 26cm)
 == Zeitplan -- Langfristiger Plan
-Es gilt die *720h* Arbeitszeit einzuplanen. Für die langfristige Planung verwendet das Team *Rational Unified Process (RUP)*. Jedes aufgeführte Feature unter "Development" in der Tabelle repräsentiert ein Epic von Jira. 
+Es gilt die *720h* Arbeitszeit einzuplanen. Für die langfristige Planung verwendet das Team *Rational Unified Process (RUP)*. Die Sprints, oder auch Iterationen gennant, dauern jeweils zwei Wochen. 
 #gantt(yaml("../resources/gantt.yaml"))
 
 #set page("us-letter")
 #pagebreak()
+== Kurzfristiger Plan
+Die kurzfristige Pläne werden in Jira in Form von Sprints erfasst. Vor jeder Iteration werden User Stories aus dem Backlog in den neuen Sprint übernommen, damit sich das Team einen Überblick verschaffen kann, was bis zum Ende des nächsten Sprints noch zu erledigen ist.
+
 == Prozesse
 Unser Projekt folgt dem Ansatz *Scrum+*. Dieser kombiniert eine langfristige Planung und Grobstrukturierung anhand des *Rational Unified Process (RUP)* mit einer kurzfristigen Planung, Umsetzung und Steuerung des wöchentlichen Arbeitsfortschritts mittels *Scrum*.
 
@@ -143,6 +147,7 @@ Unsere Risiken konnten wir in fünf Kategorien unterteilen. Angesichts unserer b
   - *Risiko:* Einzelne Teammitglieder sind exklusive Admins für kritische Tools
   - *Mitigation:* Wir vergeben, wo möglich, Admin-Rechte an mindestens zwei Personen. Durch unser öffentliches GitHub-Repository und die leicht reproduzierbare Vercel-Konfiguration minimieren wir zudem den Schaden bei einem Zugriffsverlust.
 
+#pagebreak()
 == Guidelines
 In diesem Abschnitt gehen wir in die Details der Guidelines ein, die es uns als Team ermöglichen, einheitlich, zielorientiert und sturkturiert an diesem Projekt zu arbeiten.
 
@@ -168,6 +173,7 @@ Wir haben uns bewusst dagegen entschieden, einen Styleguide einer grossen Firma 
 - *Naming Conventions:* React-Komponenten, Interfaces und Types werden in `PascalCase` geschrieben. Variablen, Funktionen und Hooks werden in `camelCase` benannt.
 - *Sprache:* Der Code und die Kommentare werden auf Englisch geschrieben.
 
+#pagebreak()
 === Versionskontrolle
 
 Als Versionskontrollsystem verwenden wir Git; GitHub dient uns, um unser Projekt-Repository zu hosten. Im Grunde existieren zwei Basis-Branches im Projekt: `master` und `dev`.
@@ -215,6 +221,7 @@ caption: [Beschreibung der Tabelle]) <tabellen-label>
 
 ```
 
+#pagebreak()
 == Time Tracking
 Für Time-Tracking wird die Webseite *Clockify* verwendet. Sie ermöglicht es uns, unsere Arbeitszeiten zu erfassen, sodass der Fortschritt des Projekts übersichtlich nachvollzogen werden kann. Clockify ist auch mit zahlreichen Features ausgerüstet, die mit Hilfe von Diagrammen anzeigt, wer wie viel an einem Feature gearbeitet hat. Diese Visualisierungen können auch dem Stakeholder gezeigt werden, falls nötig.
 

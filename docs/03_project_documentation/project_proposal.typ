@@ -15,7 +15,7 @@
 #block[
   #figure(
     align(
-      center,
+      left,
     )[#table(
         columns: 6,
         align: (center, center, center, center, center, center),

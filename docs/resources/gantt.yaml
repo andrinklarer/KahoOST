@@ -19,48 +19,30 @@ tasks:
         end: 2026-03-26
       - name: Construction
         start: 2026-03-26
-        end: 2026-05-26
+        end: 2026-05-18
       - name: Transition
-        start: 2026-05-26
+        start: 2026-05-18
         end: 2026-06-01
-  - name: Administration
+  - name: SE Project
     subtasks:
       - name: Projekt-Management (120h)
         start: 2026-02-16
         end: 2026-06-12
       - name: Projekt-Planung (60h)
         start: 2026-02-16
-        end: 2026-06-12
-      - name: Requirements-Engineering (40h)
+        end:  2026-03-16
+      - name: Requirements-Engineering (50h)
         start: 2026-02-16
-        end: 2026-06-12
-      - name: Software-Architektur
+        end: 2026-03-30
+      - name: Software-Architektur (40h)
         start: 2026-02-16
-        end: 2026-06-12
-
-  - name: Development
-    intervals:
-      - start: 2026-02-16
-        end: 2026-06-12
-    subtasks:
-      - name: Benutzerverwaltung
-        start: 2026-02-16
-        end: 2026-06-12
-      - name: Quizze erstellen und verwalten
-        start: 2026-02-16
-        end: 2026-06-12
-      - name: Quiz spielen
-        start: 2026-02-16
-        end: 2026-06-12
-      - name: Quiz Statistik
-        start: 2026-02-16
-        end: 2026-06-12
-      - name: Quiz Dashboard
-        start: 2026-02-16
-        end: 2026-06-12
-      - name: Weitere Seiten
-        start: 2026-02-16
-        end: 2026-06-12
+        end: 2026-03-30
+      - name: Development (370h)
+        start: 2026-03-16
+        end: 2026-06-01
+      - name: Testing & Quality Assurance (80h)
+        start: 2026-04-27
+        end: 2026-06-01
 
 milestones:
   - name: Kickoff-Meeting
