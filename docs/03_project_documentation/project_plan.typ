@@ -1,5 +1,6 @@
 #import "@preview/gantty:0.5.1": gantt
 
+#pagebreak()
 = Projektplan
 
 == Scope -- Estimated Features
@@ -99,8 +100,8 @@ Damit jeder die Erfahrung hat, wie ein Meeting geführt werden sollte, werden wi
   caption: [Projektmanagement Rollen],
 )
 
+#pagebreak()
 == Risiko Management
-#line(length: 100%)
 // Miroboard https://miro.com/app/board/uXjVG_S52h0=/
 #figure(
   image("../resources/risks-v1.png", width: 100%),
