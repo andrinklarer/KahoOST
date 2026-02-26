@@ -37,7 +37,7 @@
   kind: table,
 )
 
-  Informatik \
+  Departement Informatik \
   Ostschweizer Fachhochschule
 
   #box(image("resources/logo-ost.svg", height: 3cm))
